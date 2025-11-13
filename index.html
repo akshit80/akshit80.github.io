@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akshit Dhiman | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0A74DA;
+            --secondary: #063970;
+            --text-dark: #222;
+            --text-light: #fff;
+            --card-bg: rgba(255, 255, 255, 0.65);
+            --shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+            color: var(--text-dark);
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            padding: 70px 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--text-light);
+            box-shadow: var(--shadow);
+        }
+
+        header img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255, 255, 255, 0.85);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+            margin-bottom: 15px;
+            transition: 0.4s ease;
+        }
+
+        header img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0 0;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* SECTIONS */
+        section {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 40px 30px;
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--secondary);
+            border-left: 6px solid var(--primary);
+            padding-left: 14px;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: var(--secondary);
+            color: var(--text-light);
+            padding: 10px 16px;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            cursor: default;
+        }
+
+        .skills span:hover {
+            background: var(--primary);
+            transform: translateY(-4px);
+        }
+
+        /* PROJECTS */
+        .project {
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 15px;
+            background: #ffffff;
+            box-shadow: var(--shadow);
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--secondary);
+            color: var(--text-light);
+            margin-top: 60px;
+        }
+        /* SCROLL ANIMATION */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.9s ease;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/profileimg.jpg" alt="Profile Photo">
+        <h1>Akshit Dhiman</h1>
+        <p>Computer Science Student</p>
+    </header>
+
+    <section class="reveal">
+        <h2>About Me</h2>
+        <p>
+            I am a computer science student passionate about Machine Learning, Data Science, and building impactful applications.
+            I love solving complex problems and constantly improving myself.
+        </p>
+    </section>
+
+    <section class="reveal">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>C++</span>
+            <span>Python</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Machine Learning</span>
+            <span>Data Science</span>
+            <span>Problem Solving</span>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <h2>Profiles</h2>
+
+        <div class="profile-buttons" style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:30px;">
+
+            <!-- GitHub Button -->
+            <a href="https://github.com/akshit80" target="_blank" class="btn profile-btn github-btn">
+                <svg width="20" height="20" fill="white" style="margin-right:8px;" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                    -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95
+                    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 0 1 8 3.87c.68.003
+                    1.36.092 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+                    0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+                GitHub
+            </a>
+
+            <!-- LinkedIn Button -->
+            <a href="https://www.linkedin.com/in/akshit-dhiman-91796a321/" target="_blank" class="btn profile-btn linkedin-btn">
+                <svg width="20" height="20" fill="white" style="margin-right:8px;" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175
+                    1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837
+                    0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.539-1.359 1.248 0 .694.52 1.248
+                    1.327 1.248h.016zM13.458 13.394v-3.97c0-2.121-1.134-3.104-2.644-3.104-1.219 0-1.774.676-2.082 1.152v-0.985H6.341
+                    c.03.652 0 7.225 0 7.225h2.391V9.554c0-.207.015-.414.076-.562.166-.414.544-.844 1.18-.844 0.833 0 1.166.637
+                    1.166 1.571v3.675h2.304z"/>
+                </svg>
+                LinkedIn
+            </a>
+
+            <!-- LeetCode Button -->
+            <a href="https://leetcode.com/u/hZwkb9sF73/" target="_blank" class="btn profile-btn leetcode-btn">
+                <svg width="20" height="20" fill="white" style="margin-right:8px;" viewBox="0 0 50 50">
+                    <path d="M25 2C12.3 2 2 12.3 2 25s10.3 23 23 23 23-10.3 23-23S37.7 2 25 2zm0 44C13.3 46 4 36.7 4 25S13.3 4 25 4s21 9.3 21 21-9.3 21-21 21z"/>
+                    <path d="M30.7 16.6L24 23.3 30.7 30 29 31.7 21 23.7l8-8 1.7 1.6z"/>
+                </svg>
+                LeetCode
+            </a>
+
+        </div>
+
+        <style>
+            .profile-btn {
+                padding: 12px 26px;
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                font-weight: 600;
+                font-size: 1rem;
+                text-decoration: none;
+                color: white;
+                transition: 0.3s;
+                box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+            }
+            .profile-btn:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+            }
+            .github-btn { background: #000000; }
+            .linkedin-btn { background: #0e76a8; }
+            .leetcode-btn { background: #f89f1b; }
+        </style>
+    </section>
+
+    <section class="reveal">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Multi Disease Prediction System</h3>
+            <p>A Streamlit-based ML project that predicts Diabetes, Heart Disease, and Parkinson's Disease using machine learning models.</p>
+            <a href="https://github.com/akshit80/MULTI-DISEASE-PREDICTION-SYSTEM" target="_blank">View Project →</a>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <h2>Other Interests</h2>
+        <p>Football • Swimming • Photography</p>
+    </section>
+
+    <section class="reveal">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:akshitdhiman504@gmail.com">akshitdhiman504@gmail.com</a></p>
+        <p><strong>Phone:</strong> +91 7018967841</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Akshit Dhiman</p>
+    </footer>
+<script>
+    function revealElements() {
+        const reveals = document.querySelectorAll('.reveal');
+        for (let i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const elementTop = reveals[i].getBoundingClientRect().top;
+            const revealPoint = 120;
+
+            if (elementTop < windowHeight - revealPoint) {
+                reveals[i].classList.add('active');
+            } else {
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', revealElements);
+    window.addEventListener('load', revealElements);
+</script>
+</body>
+</html>
